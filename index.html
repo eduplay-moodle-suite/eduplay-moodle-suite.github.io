@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduPlay Moodle Suite — Suíte completa para EduPlay no Moodle</title>
+  <meta name="description" content="Ecossistema de plugins, ferramentas e integrações open source para conectar o EduPlay (RNP) ao Moodle (não oficial)." />
+  <meta property="og:title" content="EduPlay Moodle Suite" />
+  <meta property="og:description" content="Suíte completa para EduPlay no Moodle (não oficial): Módulos de atividade, filtros, editores e repositórios." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eduplay-moodle-suite.github.io" />
+
+  <!-- Tipografia moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <div class="brand-logo">EP</div>
+        <span>EduPlay Moodle Suite</span>
+        <span class="brand-badge">Org</span>
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggleBtn" aria-label="Alternar Tema">
+          <i data-lucide="sun" id="themeIcon"></i>
+          <span id="themeLabel">Claro</span>
+        </button>
+        <a href="https://github.com/eduplay-moodle-suite" target="_blank" rel="noopener" class="btn-secondary">
+          <i data-lucide="github"></i> GitHub Org
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-pill">
+        <i data-lucide="video"></i> Ecossistema Open Source EduPlay + Moodle
+      </div>
+      <h1 class="hero-title">Suíte completa para EduPlay no Moodle</h1>
+      <p class="hero-subtitle">
+        Integre vídeos, canais e transmissões ao vivo da plataforma EduPlay (RNP) diretamente nas suas salas virtuais do Moodle com máxima performance, responsividade e facilidade de gestão.
+      </p>
+
+      <!-- SEARCH BAR -->
+      <div class="search-box">
+        <i data-lucide="search"></i>
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar plugin, componente ou ferramenta..." aria-label="Buscar componente" />
+      </div>
+    </section>
+
+    <!-- SEÇÃO 1: PLUGINS DE CONTEÚDO & VÍDEO -->
+    <section class="category-section" id="plugins-content">
+      <div class="section-intro">
+        <div class="section-badge"><i data-lucide="layers"></i> Plugins Moodle</div>
+        <h2 class="section-title">🎬 Módulos, Filtros e Editores</h2>
+        <p class="section-desc">
+          Extensões desenvolvidas para proporcionar uma experiência fluida de reprodução e incorporação de conteúdos audiovisuais do EduPlay.
+        </p>
+      </div>
+
+      <div class="section-grid">
+        <!-- 1. MOD_EDUPLAY -->
+        <article class="repo-card" data-search="mod_eduplay mod atividade video player streaming transmissão rnp">
+          <div>
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">📺</span>
+                <h3 class="card-title">moodle-mod_eduplay</h3>
+              </div>
+              <p class="card-desc">
+                Módulo de atividade que permite adicionar vídeos e transmissões ao vivo do EduPlay como recursos avaliativos ou formativos no curso, com rastreamento de conclusão.
+              </p>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Moodle 4.x+</span>
+              <span class="tag">Atividade</span>
+              <span class="tag">Streaming</span>
+              <span class="tag">PHP</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/eduplay-moodle-suite/mod_eduplay" target="_blank" rel="noopener">
+              Ver Repositório <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. FILTER_EDUPLAY -->
+        <article class="repo-card" data-search="filter_eduplay filtro conversão url player responsivo oembed embed">
+          <div>
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">⚡</span>
+                <h3 class="card-title">moodle-filter_eduplay</h3>
+              </div>
+              <p class="card-desc">
+                Filtro que transforma automaticamente links e códigos de vídeos do EduPlay inseridos em qualquer texto do Moodle em reprodutores de vídeo responsivos e acessíveis.
+              </p>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Moodle 4.x+</span>
+              <span class="tag">Filtro de Texto</span>
+              <span class="tag">Auto-embed</span>
+              <span class="tag">PHP</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/eduplay-moodle-suite/filter_eduplay" target="_blank" rel="noopener">
+              Ver Repositório <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. TINY_EDUPLAY -->
+        <article class="repo-card" data-search="tiny_eduplay editor tinymce modal busca inserção botão wysiwyg">
+          <div>
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">✍️</span>
+                <h3 class="card-title">moodle-tiny_eduplay</h3>
+              </div>
+              <p class="card-desc">
+                Extensão para o editor TinyMCE que adiciona um botão dedicado na barra de ferramentas para buscar e embutir vídeos do EduPlay diretamente no conteúdo editorial.
+              </p>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Moodle 4.1+</span>
+              <span class="tag">TinyMCE 6</span>
+              <span class="tag">Editor</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/eduplay-moodle-suite/tiny_eduplay" target="_blank" rel="noopener">
+              Ver Repositório <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. REPOSITORY_EDUPLAY -->
+        <article class="repo-card" data-search="repository_eduplay repositório filepicker catálogo busca mídias">
+          <div>
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">📁</span>
+                <h3 class="card-title">moodle-repository_eduplay</h3>
+              </div>
+              <p class="card-desc">
+                Repositório para o seletor de arquivos do Moodle (File Picker) que possibilita navegar e referenciar conteúdos do acervo EduPlay com autenticação segura.
+              </p>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Moodle 4.x+</span>
+              <span class="tag">Repositório</span>
+              <span class="tag">File Picker</span>
+              <span class="tag">PHP</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/eduplay-moodle-suite/repository_eduplay" target="_blank" rel="noopener">
+              Ver Repositório <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: ORQUESTRAÇÃO & AMBIENTE -->
+    <section class="category-section" id="workspace-tools">
+      <div class="section-intro">
+        <div class="section-badge"><i data-lucide="terminal"></i> Desenvolvimento & Gestão</div>
+        <h2 class="section-title">🛠️ Ambiente de Desenvolvimento Local</h2>
+        <p class="section-desc">
+          Ferramentas para automação, orquestração e padronização do desenvolvimento local de todos os plugins da suíte.
+        </p>
+      </div>
+
+      <div class="section-grid">
+        <!-- 5. WORKSPACE -->
+        <article class="repo-card" data-search="workspace cli epms docker compose orquestração desenvolvimento ambiente local">
+          <div>
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">🐳</span>
+                <h3 class="card-title">workspace (Privado)</h3>
+              </div>
+              <p class="card-desc">
+                Orquestrador local com suporte a Docker Compose (Moodle + PostgreSQL), utilitário de linha de comando <code>epms</code> e workspace multi-root para o VS Code.
+              </p>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Docker Compose</span>
+              <span class="tag">CLI epms</span>
+              <span class="tag">Python</span>
+              <span class="tag">Privado</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/eduplay-moodle-suite/workspace" target="_blank" rel="noopener">
+              Ver Repositório <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 6. .GITHUB -->
+        <article class="repo-card" data-search=".github profile perfil documentação diretrizes comunidade">
+          <div>
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="card-icon">🏛️</span>
+                <h3 class="card-title">.github (Perfil da Org)</h3>
+              </div>
+              <p class="card-desc">
+                Repositório de saúde comunitária, templates de issues e pull requests, e perfil público da organização EduPlay Moodle Suite no GitHub.
+              </p>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Community Health</span>
+              <span class="tag">Templates</span>
+              <span class="tag">Markdown</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/eduplay-moodle-suite/.github" target="_blank" rel="noopener">
+              Ver Repositório <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/eduplay-moodle-suite" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://eduplay.rnp.br" target="_blank" rel="noopener">Portal EduPlay (RNP)</a>
+        <a href="https://moodle.org" target="_blank" rel="noopener">Moodle</a>
+      </div>
+      <p>EduPlay Moodle Suite — Projeto independente e open source sob licença GPL-3.0. Não oficial.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
