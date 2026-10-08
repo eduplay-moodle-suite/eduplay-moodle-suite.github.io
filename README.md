@@ -7,9 +7,9 @@ A **EduPlay Moodle Suite** é uma suíte completa de soluções e plugins comuni
 
 ## Projetos e Plugins Catalogados:
 - **`workspace`**: Ambiente de orquestração local via Docker Compose e CLI `epms` para desenvolvimento dos plugins.
-- **`mod_eduplay`**: Módulo de atividade para incorporar e acompanhar vídeos e transmissões ao vivo do EduPlay.
-- **`filter_eduplay`**: Filtro de conversão automática de links e códigos do EduPlay em players responsivos.
-- **`tiny_eduplay`**: Plugin para o editor TinyMCE permitindo selecionar e embutir vídeos do EduPlay com um clique.
-- **`repository_eduplay`**: Repositório de arquivos do Moodle para navegação e inserção de vídeos do acervo EduPlay.
+- [`moodle-local_eduplay`](https://github.com/eduplay-moodle-suite/moodle-local_eduplay): plugin núcleo (parser de URL, URLs derivadas, cache e segurança). [Documentação](https://eduplay-moodle-suite.github.io/moodle-local_eduplay/).
+- `moodle-media_eduplay` *(planejado)*: media player com o player oficial do EduPlay em iframe.
+- `moodle-tiny_eduplay` *(futuro)*: inserção de vídeos no editor TinyMCE.
+- `moodle-repository_eduplay` *(PoC futura)*: seleção remota de conteúdos.
 
 Acesse o portal em: [https://eduplay-moodle-suite.github.io](https://eduplay-moodle-suite.github.io)
