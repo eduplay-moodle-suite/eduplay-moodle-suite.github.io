@@ -10,6 +10,6 @@ A **EduPlay Moodle Suite** é uma suíte completa de soluções e plugins comuni
 - [`moodle-local_eduplay`](https://github.com/eduplay-moodle-suite/moodle-local_eduplay): plugin núcleo (parser de URL, URLs derivadas, cache e segurança). [Documentação](https://eduplay-moodle-suite.github.io/moodle-local_eduplay/).
 - [`moodle-media_eduplay`](https://github.com/eduplay-moodle-suite/moodle-media_eduplay): media player com o player oficial do EduPlay em iframe.
 - [`moodle-tiny_eduplay`](https://github.com/eduplay-moodle-suite/moodle-tiny_eduplay): inserção de vídeos no editor TinyMCE.
-- [`moodle-repository_eduplay`](https://github.com/eduplay-moodle-suite/moodle-repository_eduplay) *(PoC)*: link colado na busca do seletor de arquivos.
+- [`moodle-repository_eduplay`](https://github.com/eduplay-moodle-suite/moodle-repository_eduplay) busca de vídeos por título no seletor de arquivos.
 
 Acesse o portal em: [https://eduplay-moodle-suite.github.io](https://eduplay-moodle-suite.github.io)
