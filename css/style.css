@@ -502,3 +502,17 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Header on narrow screens: let the actions wrap instead of overflowing. */
+.nav-inner, .nav-actions {
+  flex-wrap: wrap;
+}
+@media (max-width: 520px) {
+  .nav-inner {
+    justify-content: center;
+  }
+  .nav-actions {
+    justify-content: center;
+    gap: var(--space-2);
+  }
+}

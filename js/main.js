@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateThemeUI(theme) {
     if (themeLabel) {
-      themeLabel.textContent = theme === 'dark' ? 'Escuro' : 'Claro';
+      const english = (document.documentElement.lang || '').toLowerCase().startsWith('en');
+      const labels = english ? {dark: 'Dark', light: 'Light'} : {dark: 'Escuro', light: 'Claro'};
+      themeLabel.textContent = theme === 'dark' ? labels.dark : labels.light;
     }
     if (themeIcon) {
       themeIcon.setAttribute('data-lucide', theme === 'dark' ? 'moon' : 'sun');
