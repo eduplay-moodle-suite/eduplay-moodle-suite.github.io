@@ -400,3 +400,105 @@ footer {
 .footer-links a:hover {
   color: var(--color-primary);
 }
+
+/* ---- Pitch sections (hero CTAs, demos, install steps) ---- */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  margin: var(--space-6) 0 var(--space-4);
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background var(--transition-interactive);
+}
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+}
+.hero-note {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin: 0 0 var(--space-6);
+}
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+.video-card {
+  margin: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.video-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+.video-card figcaption {
+  padding: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+.shot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+.shot-grid figure {
+  margin: 0;
+}
+.shot-grid img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-surface);
+}
+.shot-grid figcaption {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+.steps {
+  max-width: var(--content-default);
+  margin: 0 auto var(--space-6);
+  padding-left: var(--space-8);
+  display: grid;
+  gap: var(--space-3);
+}
+.steps li {
+  line-height: 1.6;
+}
+.steps a, .section-desc a {
+  color: var(--color-primary);
+}
+.tag-beta {
+  background: var(--color-primary-highlight);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.card-actions {
+  flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .demo-grid, .shot-grid {
+    grid-template-columns: 1fr;
+  }
+}
